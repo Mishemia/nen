@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Мое простое приложение</title>
+</head>
+<body>
+    <h1>Привет, мир!</h1>
+    <p>Текущая дата и время: <?php echo date('Y-m-d H:i:s'); ?></p>
+    
+    <?php
+    // Простой счетчик посещений
+    $counter_file = 'counter.txt';
+    
+    if (file_exists($counter_file)) {
+        $count = (int)file_get_contents($counter_file);
+    } else {
+        $count = 0;
+    }
+    
+    $count++;
+    file_put_contents($counter_file, $count);
+    ?>
+    
+    <p>Количество посещений: <?php echo $count; ?></p>
+</body>
+</html>
