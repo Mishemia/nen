@@ -1,32 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Мое простое приложение</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .container {
-            text-align: center;
-            margin-top: 50px;
-        }
-        form {
-            margin: 20px 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Добро пожаловать в мое приложение!</h1>
-        <p>Текущее время сервера: <?php echo date('Y-m-d H:i:s'); ?></p>
-        
-        <form method="post" action="greet.php">
-            <input type="text" name="name" placeholder="Введите ваше имя">
-            <button type="submit">Поприветствовать</button>
-        </form>
-    </div>
-</body>
-</html>
+<?php 
+phpinfo(); 
+?> 
